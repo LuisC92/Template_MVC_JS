@@ -1,0 +1,42 @@
+<section class="bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhcsL2UQpttfxlKiOgoUxsWAbcVvv4suzLkA&usqp=CA')] h-96 p-12 flex justify-end">
+  <div class="basis-1/2">
+    <h1 class="text-white text-5xl text-center w-96">Let's start discovering a brand new World</h1>
+    <a href="#contact">
+      <button class="mt-12 w-96 h-20 text-white text-center bg-gray-400 rounded-2xl hover:bg-gray-700 transition duration-300">
+        Contact us
+      </button>
+    </a>
+  </div>
+</section>
+<section class="text-gray-700 flex items-center justify-around m-24">
+  <div class="basis-1/2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-r2Ng5_N1tCI9tA7RUnXTAReKm5lNMM8o2A&usqp=CAU" class="w-4/5 m-auto" alt="">
+  </div>
+  <div class="basis-1/2">
+    <div class="flex">
+      <img src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png" alt="Logo de notre E-commerce" class="w-10 p-2">
+      <h2 class="text-3xl pb-2">Amazing Commerce</h2>
+    </div>
+    <h3 class="text-1xl text-gray-400">The new way of shopping</h3>
+    <p class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatibus ducimus quis in deserunt, mollitia iste sed asperiores necessitatibus suscipit quam ipsum nostrum unde, facere culpa consequuntur laboriosam pariatur doloremque.
+    Voluptatibus, ex rem rerum, placeat nihil voluptatum illum eveniet eaque dolorum dolorem modi recusandae repellat! Dolorem ipsa similique asperiores laudantium mollitia? Iure ducimus molestiae accusantium dignissimos soluta optio esse hic!
+    Delectus sed laboriosam tenetur, ab alias fuga accusantium assumenda omnis veniam? Error cupiditate reprehenderit doloribus illum! Perferendis vitae aliquid commodi inventore delectus, iste expedita! Itaque esse ab dolore assumenda adipisci.
+    Porro nobis atque laboriosam, voluptatem perferendis sapiente eveniet accusantium, libero deleniti eum mollitia, ab praesentium excepturi quia repudiandae dolor quam reprehenderit consequuntur dignissimos facilis sed error. Accusantium harum nisi excepturi.</p>
+  </div>
+</section>
+<section class="m-24">
+  <h2 class="text-center text-3xl m-4">Ours categories</h2>
+  <p class="mt-8 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tenetur sint molestias eum eius sequi obcaecati fugiat dolorum animi! Sequi, repellat fugit est adipisci incidunt necessitatibus vero magnam corporis debitis!
+  Deserunt eveniet ipsam atque incidunt consectetur id amet ullam nulla a sunt quas accusamus, aliquid exercitationem repudiandae aspernatur earum ratione laudantium corrupti sequi voluptate maiores. Aspernatur distinctio officia repudiandae blanditiis.</p>
+  <ul class="flex justify-around gap-2">
+
+    <% categories.forEach((category) => { %>
+      <div class="border rounded-2xl p-4 shadow-gray-400 shadow-lg hover:shadow-gray-700 transition duration-150">
+
+        <li class="text-1xl text-center m-2"><%= category.label.toUpperCase(); %></li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quo porro optio autem hic ipsum aperiam quia? At facere pariatur asperiores delectus magni, fugiat repudiandae ut consequatur ipsam impedit beatae?</p>
+      </div>
+    <%}) %>
+  </ul>
+    
+</section>

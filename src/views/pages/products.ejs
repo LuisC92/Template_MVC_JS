@@ -1,0 +1,23 @@
+<div class="grid grid-cols-3 gap-4 max-w-5xl my-8 mx-auto">
+  <% products.forEach((product) => { %>
+  <acticle>
+    <a
+      href="/products/<%= product.id %>"
+      class="block p-6 rounded-lg shadow-lg bg-white max-w-sm hover:shadow-xl transition duration-150 ease-in-out cursor-pointer h-full flex flex-col justify-between"
+      ><h2 class="text-gray-900 text-lg leading-tight font-medium mb-2">
+        <%= product.title %>
+      </h2>
+      <img
+        class="my-5 mx-auto h-30 w-20 object-cover"
+        src="<%= product.image %>"
+        alt="<%= product.title %>"
+      />
+      <div class="flex justify-between">
+        <%- include('../partials/stars', {rate: product.rate}); %>
+
+        <p><%= product.price %> €</p>
+      </div>
+    </a>
+  </acticle>
+  <% }); %>
+</div>
